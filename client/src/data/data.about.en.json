@@ -1,0 +1,18 @@
+{
+	"title": "KeyNest's values",
+	"description": "Welcome to KeyNest, your go-to platform for finding unique accommodations...",
+	"accordions": [
+		{
+			"title": "Reliability",
+			"content": "The listings posted on KeyNest guarantee complete reliability..."
+		},
+		{
+			"title": "Service",
+			"content": "Our teams are at your disposal to provide you with a perfect experience..."
+		},
+		{
+			"title": "Trust",
+			"content": "At KeyNest, we prioritize building trust with our users by ensuring secure transactions, verified hosts, and transparent policies."
+		}
+	]
+}

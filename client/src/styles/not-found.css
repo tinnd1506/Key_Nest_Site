@@ -1,0 +1,42 @@
+.not-found {
+    min-height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.not-found span {
+    color: var(--main-clr);
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.not-found h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--footer-bg);
+    max-width: 150px;
+    text-align: center;
+}
+
+.not-found a {
+    margin-top: 2em;
+    color: var(--main-clr);
+}
+
+/* larger screens */
+@media only screen and (min-width: 768px) {
+    .not-found {
+        min-height: 75vh;
+    }
+
+    .not-found span {
+        font-size: 285px;
+    }
+
+    .not-found h2 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+}

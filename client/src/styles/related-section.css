@@ -1,0 +1,28 @@
+.related-items {
+    display: flex;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.related-items .card {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+.related-items .card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.related-container a {
+    width: 200%;
+    display: block;
+    aspect-ratio: 7 / 6;
+}
+
+.related-section h2 {
+    margin-top: 60px;
+    color: var(--footer-bg);
+}

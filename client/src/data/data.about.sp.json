@@ -1,0 +1,18 @@
+{
+	"title": "Los valores de KeyNest",
+	"description": "Bienvenido a KeyNest, tu plataforma de referencia para encontrar alojamientos únicos...",
+	"accordions": [
+		{
+			"title": "Fiabilidad",
+			"content": "Los anuncios publicados en KeyNest garantizan una fiabilidad total..."
+		},
+		{
+			"title": "Servicio",
+			"content": "Nuestros equipos están a tu disposición para ofrecerte una experiencia perfecta..."
+		},
+		{
+			"title": "Confianza",
+			"content": "En KeyNest, damos prioridad a construir una relación de confianza con nuestros usuarios garantizando transacciones seguras, anfitriones verificados y políticas transparentes."
+		}
+	]
+}

@@ -1,0 +1,37 @@
+.lightbox-background {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.707);
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-background button {
+    position: fixed;
+    top: 11%;
+    right: 1em;
+    padding: 1em;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.lightbox-content img {
+    max-width: 1240px;
+    width: 95%;
+    margin: auto;
+    display: block;
+    max-height: 100dvh;
+}
+
+
+
+.d-none {
+    display: none !important;
+}
