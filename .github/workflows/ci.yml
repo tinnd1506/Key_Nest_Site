@@ -1,0 +1,57 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    
+    - name: Verify repository structure
+      run: |
+        echo "Repository contents:"
+        ls -la
+        echo "Checking client directory..."
+        if [ -d "client" ]; then
+          echo "Client directory exists"
+          echo "Client directory contents:"
+          ls -la client
+          if [ -f "client/package.json" ]; then
+            echo "Client package.json exists"
+            cat client/package.json
+          else
+            echo "Error: client/package.json not found"
+            exit 1
+          fi
+        else
+          echo "Error: client directory not found"
+          exit 1
+        fi
+    
+    - name: Install dependencies
+      run: npm install
+      working-directory: client
+    
+    - name: Run tests
+      run: npm test
+      working-directory: client
+    
+    - name: Build project
+      run: npm run build
+      working-directory: client
+    
+    - name: Upload production build
+      uses: actions/upload-artifact@v3
+      with:
+        name: production-build
+        path: client/dist
+        retention-days: 7
